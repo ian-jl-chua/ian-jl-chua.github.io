@@ -2,14 +2,23 @@ body{
   background-color: black;
   color: whitesmoke;
 }
-a:link, a:visited {
-  color: red;
+a:link { 
+    color: rgb(141, 31, 31);
+    background-color: transparent;
+    text-decoration: none;
+} 
+
+a:visited {
+  color: rgb(234, 184, 184);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover, a:active {
-  color: whitesmoke;
+  color: rgb(200, 63, 63);
   background-color: transparent;
   text-decoration: underline;
+}
+.container{
+  max-width: 996px;
 }
