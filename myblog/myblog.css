@@ -2,20 +2,14 @@ body{
   background-color: black;
   color: whitesmoke;
 }
-a:link { 
-    color: rgb(141, 31, 31);
+a:link, a:visited { 
+    color: whitesmoke;
     background-color: transparent;
     text-decoration: none;
 } 
 
-a:visited {
-  color: rgb(234, 184, 184);
-  background-color: transparent;
-  text-decoration: none;
-}
-
 a:hover, a:active {
-  color: rgb(200, 63, 63);
+  color: #a52626;
   background-color: transparent;
   text-decoration: underline;
 }
