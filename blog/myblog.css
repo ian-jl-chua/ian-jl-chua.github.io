@@ -3,28 +3,26 @@ html{
   background-size: cover;
 }
 
-.theblog{
+.block{
   background-color: rgb(0,0,0,0.6);
   color: whitesmoke;
-  border-width: 5px;
   border-style: solid;
   border-color: rgb(99, 105, 99);
   padding: 10px;
 }
 
-.navbar{
-  background-color: rgb(0,0,0,0.6);
-    color: whitesmoke;
-    border-width: 2.5px 5px 5px;
-    border-style: solid;
-    border-color: rgb(99, 105, 99);
-    padding: 10px;
+#align1{
+  border-width: 5px 5px 2.5px;
+}
+
+#align2{
+  border-width: 2.5px 5px 5px;
 }
 
 a:link, a:visited { 
-    color: whitesmoke;
-    background-color: transparent;
-    text-decoration: none;
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
 } 
 
 a:hover, a:active {
