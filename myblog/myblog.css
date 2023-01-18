@@ -2,3 +2,14 @@ body{
   background-color: black;
   color: whitesmoke;
 }
+a:link, a:visited {
+  color: #8f1e1e;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: rgb(204, 33, 33);
+  background-color: transparent;
+  text-decoration: underline;
+}
