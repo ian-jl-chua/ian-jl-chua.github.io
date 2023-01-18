@@ -3,13 +3,13 @@ body{
   color: whitesmoke;
 }
 a:link, a:visited {
-  color: #8f1e1e;
+  color: red;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover, a:active {
-  color: rgb(204, 33, 33);
+  color: whitesmoke;
   background-color: transparent;
   text-decoration: underline;
 }
