@@ -1,5 +1,6 @@
 html {
   background: url(https://ian-jl-chua.github.io/myblog/foggy-mountains-nature-fog.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 body{
