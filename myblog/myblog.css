@@ -1,12 +1,17 @@
-html {
+html{
   background: url(https://ian-jl-chua.github.io/myblog/foggy-mountains-nature-fog.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
-body{
-  background-color: rgb(0,0,0,0);
+.theblog{
+  background-color: rgb(0,0,0,0.6);
   color: whitesmoke;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(99, 105, 99);
+  padding: 10px;
 }
+
 a:link, a:visited { 
     color: whitesmoke;
     background-color: transparent;
@@ -14,10 +19,7 @@ a:link, a:visited {
 } 
 
 a:hover, a:active {
-  color: #a52626;
+  color: rgb(22, 56, 22);
   background-color: transparent;
   text-decoration: underline;
-}
-.container{
-  max-width: 996px;
 }
