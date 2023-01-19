@@ -3,6 +3,52 @@ html{
   background-size: cover;
 }
 
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: rgb(0,0,0,0.6);
+  color: whitesmoke;
+  border-style: solid;
+  border-color: rgb(99, 105, 99);
+  padding: 10px;
+  border-width: 5px 5px 5px;
+}
+
+ul.nav li {float: left;}
+
+ul.nav li a {
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 12px 50px;
+}
+
+ul.nav li a:link, a:visited { 
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+} 
+
+ul.nav li a:hover, a:active {
+  color: rgb(22, 56, 22);
+  background-color: whitesmoke;
+  text-decoration: underline;
+}
+
+
+a:link, a:visited { 
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+} 
+
+a:hover, a:active {
+  color: rgb(22, 56, 22);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 .block{
   background-color: rgb(0,0,0,0.6);
   color: whitesmoke;
@@ -19,14 +65,6 @@ html{
   margin: 30px;
 }
 
-a:link, a:visited { 
-  color: whitesmoke;
-  background-color: transparent;
-  text-decoration: none;
-} 
-
-a:hover, a:active {
-  color: rgb(22, 56, 22);
-  background-color: transparent;
-  text-decoration: underline;
+@media screen and (max-width: 600px) {
+  ul.nav li {float: none;}
 }
