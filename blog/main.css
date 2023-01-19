@@ -24,18 +24,15 @@ ul.nav li a {
   padding: 12px 50px;
 }
 
-ul.nav li a:link, a:visited { 
-  color: whitesmoke;
-  background-color: transparent;
-  text-decoration: none;
-} 
-
-ul.nav li a:hover, a:active {
-  color: rgb(22, 56, 22);
-  background-color: whitesmoke;
-  text-decoration: underline;
+ul.nav li a:hover:not(.active) {
+  background-color: rgb(22, 56, 22);
+  color: whitesmoke; 
 }
-
+  
+ul.nav li a.active {
+  background-color: rgb(245, 245, 245, 0.8);
+  color: rgb(22, 56, 22);
+}
 
 a:link, a:visited { 
   color: whitesmoke;
