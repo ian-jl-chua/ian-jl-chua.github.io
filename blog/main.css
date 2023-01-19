@@ -2,7 +2,10 @@ html{
   background: url(https://ian-jl-chua.github.io/blog/foggy-mountains-nature-fog.jpg) no-repeat center center fixed;
   background-size: cover;
 }
-
+body{
+  background-color:  rgb(22, 56, 22, 0.8) ;
+  color: whitesmoke;
+}
 ul.nav {
   list-style-type: none;
   margin: 0;
