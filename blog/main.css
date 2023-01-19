@@ -9,14 +9,14 @@ html{
   border-style: solid;
   border-color: rgb(99, 105, 99);
   padding: 10px;
+  border-width: 5px 5px 5px;
 }
 
 #align1{
-  border-width: 5px 5px 2.5px;
-}
-
-#align2{
-  border-width: 2.5px 5px 5px;
+  border-width: 5px 5px 5px;
+  padding: 20px;
+  text-align: center;
+  margin: 30px;
 }
 
 a:link, a:visited { 
