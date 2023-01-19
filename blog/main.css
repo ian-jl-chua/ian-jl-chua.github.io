@@ -9,6 +9,7 @@ ul.nav {
   background-color: rgb(0,0,0,0.6);
   color: whitesmoke;
   border-style: solid;
+  border-radius: 5px;
   border-color: rgb(99, 105, 99);
   padding: 10px;
   border-width: 5px 5px 5px;
@@ -45,15 +46,25 @@ a:hover, a:active {
   text-decoration: underline;
 }
 
-.block{
+.main{
   background-color: rgb(0,0,0,0.6);
   color: whitesmoke;
   border-style: solid;
   border-color: rgb(99, 105, 99);
   padding: 10px;
   border-width: 5px 5px 5px;
+  border-radius: 5px;
 }
 
+.para{
+  background-color: rgb(0,0,0,0.4);
+  color: whitesmoke;
+  border-style: solid;
+  border-color: rgb(99, 105, 99);
+  padding: 10px;
+  border-width: 5px 5px 5px;
+  border-radius: 5px;
+}
 #align1{
   border-width: 5px 5px 5px;
   padding: 20px;
