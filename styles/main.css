@@ -18,6 +18,11 @@ a:hover, a:active {
   background-color: transparent;
   text-decoration: none;
 }
+
+.words{
+  font-size: 2.5vmax;
+}
+
 .imageclass{
   max-width: 100%;
   height: 100%;
