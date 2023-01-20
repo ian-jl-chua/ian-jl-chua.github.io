@@ -26,21 +26,6 @@ a:active {
   text-decoration: none;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 500px auto auto auto auto;
-  gap: 1em;
-  background-color: rgb(0, 0, 0, 0.6);
-  color: whitesmoke;
-  padding: 5px;
-}
-
-.container > div {
-  background-color: rgba(0, 16, 16, 0.4);
-  text-align: center;
-  font-size: 18px;
-}
-
 .words {
   font-size: 1.4em;
 }
@@ -52,7 +37,6 @@ a:active {
 
 .nav {
   list-style-type: none;
-  margin: 0;
   overflow: hidden;
   background-color: rgb(0, 0, 0, 0.6);
   color: whitesmoke;
