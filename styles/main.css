@@ -70,9 +70,10 @@ a:hover, a:active {
   color: whitesmoke;
   border-style: solid;
   border-color: rgb(99, 105, 99);
-  padding: 10px;
+  padding: 3vmax;
   border-width: 5px 5px 5px;
   border-radius: 5px;
+  margin: 4em 2em 4em;
 }
 
 #align1{
