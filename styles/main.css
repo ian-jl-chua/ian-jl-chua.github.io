@@ -1,29 +1,51 @@
-html{
-  background: url(https://ian-jl-chua.github.io/blog/foggy-mountains-nature-fog.jpg) no-repeat center center fixed;
+html {
+  background: url(https://ian-jl-chua.github.io/blog/foggy-mountains-nature-fog.jpg)
+    no-repeat center center fixed;
   background-size: cover;
 }
-span{
+span {
   font-weight: bold;
   text-decoration: underline;
 }
 
-a:link, a:visited { 
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+}
+a:link,
+a:visited {
   color: rgb(152, 201, 152);
   background-color: transparent;
   text-decoration: underline;
-} 
+}
 
-a:hover, a:active {
+a:hover,
+a:active {
   color: whitesmoke;
   background-color: transparent;
   text-decoration: none;
 }
 
-.words{
+.container {
+  display: grid;
+  grid-template-columns: 500px auto auto auto auto;
+  gap: 1em;
+  background-color: rgb(0, 0, 0, 0.6);
+  color: whitesmoke;
+  padding: 5px;
+}
+
+.container > div {
+  background-color: rgba(0, 16, 16, 0.4);
+  text-align: center;
+  font-size: 18px;
+}
+
+.words {
   font-size: 1.4em;
 }
 
-.imageclass{
+.imageclass {
   max-width: 100%;
   height: 100%;
 }
@@ -32,7 +54,7 @@ a:hover, a:active {
   list-style-type: none;
   margin: 0;
   overflow: hidden;
-  background-color: rgb(0,0,0,0.6);
+  background-color: rgb(0, 0, 0, 0.6);
   color: whitesmoke;
   border-style: solid;
   border-radius: 5px;
@@ -41,7 +63,9 @@ a:hover, a:active {
   border-width: 5px 5px 5px;
 }
 
-.nav li {float: left;}
+.nav li {
+  float: left;
+}
 
 .nav li a {
   display: block;
@@ -52,16 +76,16 @@ a:hover, a:active {
 
 .nav li a:hover:not(.active) {
   background-color: rgb(22, 56, 22);
-  color: whitesmoke; 
+  color: whitesmoke;
 }
-  
+
 .nav li a.active {
   background-color: rgb(245, 245, 245, 0.8);
   color: rgb(22, 56, 22);
 }
 
-.main{
-  background-color: rgb(0,0,0,0.6);
+.main {
+  background-color: rgb(0, 0, 0, 0.6);
   color: whitesmoke;
   border-style: solid;
   border-color: rgb(99, 105, 99);
@@ -70,8 +94,8 @@ a:hover, a:active {
   border-radius: 5px;
 }
 
-.para{
-  background-color: rgb(0,0,0,0.7);
+.para {
+  background-color: rgb(0, 0, 0, 0.7);
   color: whitesmoke;
   border-style: solid;
   border-color: rgb(99, 105, 99);
@@ -81,12 +105,14 @@ a:hover, a:active {
   margin: 4em 2em 4em;
 }
 
-#align1{
+#align1 {
   border-width: 5px 5px 5px;
   padding: 20px;
   margin: 30px;
 }
 
 @media screen and (max-width: 600px) {
-  ul.nav li {float: none;}
+  ul.nav li {
+    float: none;
+  }
 }
