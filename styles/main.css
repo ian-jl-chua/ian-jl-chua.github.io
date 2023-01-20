@@ -8,15 +8,15 @@ span{
 }
 
 a:link, a:visited { 
-  color: whitesmoke;
+  color: rgb(152, 201, 152);
   background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
 } 
 
 a:hover, a:active {
-  color: rgb(22, 56, 22);
+  color: whitesmoke;
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .imageclass{
   max-width: 100%;
