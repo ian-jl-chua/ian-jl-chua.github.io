@@ -27,15 +27,13 @@ a:active {
 }
 
 .words {
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 
 .imageclass {
   max-width: 100%;
-  height: 100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .nav {
