@@ -1,0 +1,47 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+/* CSS for above ^ font-family: 'Castoro Titling', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+/* font-family: 'Metal Mania', cursive; */
+/* Variable CSS */
+
+:root {
+  --background: url(https://ian-jl-chua.github.io/assets/foggy-mountains-nature-fog.jpg);
+  --bg-color1: rgb(0, 0, 0, 0.7);
+  --text-color: whitesmoke;
+  --active-color: rgb(21, 55, 21);
+  --link-color: rgb(122, 204, 122);
+
+  /* Typography */
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: Helvetica, Arial, sans-serif;
+  --biggest-font-size: 2rem;
+  --bigger-font-size: 1.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /* Font weight */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+}
+
+/* Main */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--background) no-repeat center fixed;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
