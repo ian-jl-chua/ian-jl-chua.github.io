@@ -1,18 +1,16 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
-
 /* CSS for above ^ font-family: 'Castoro Titling', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+/* ^ font-family: 'Metal Mania', cursive; */
 
-/* font-family: 'Metal Mania', cursive; */
 /* Variable CSS */
-
 :root {
   --background: url(https://ian-jl-chua.github.io/assets/foggy-mountains-nature-fog.jpg);
-  --bg-color1: rgb(0, 0, 0, 0.7);
+  --bg-color1: hsla(0, 0%, 0%, 0.7);
   --text-color: whitesmoke;
-  --active-color: rgb(21, 55, 21);
-  --link-color: rgb(122, 204, 122);
+  --active-color: hsl(120, 45%, 15%);
+  --link-color: hsl(120, 45%, 64%);
 
   /* Typography */
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -41,7 +39,20 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+input,
+textarea,
+button,
+body {
+  font-family: var(--body-font);
+}
+
+body{
   background: var(--background) no-repeat center fixed;
   background-size: cover;
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
