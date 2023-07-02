@@ -48,9 +48,13 @@ body {
   font-family: var(--body-font);
 }
 
-body{
+body {
   background: var(--background) no-repeat center fixed;
   background-size: cover;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
@@ -58,3 +62,28 @@ a {
 }
 
 /* Header and Nav */
+
+.header {
+  top: 0;
+  left: 0;
+  background-color: var(--bg-color1);
+  position: sticky;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+  z-index: 100;
+}
+
+.nav-menu {
+  width: 100%;
+}
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
