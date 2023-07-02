@@ -7,10 +7,10 @@
 /* Variable CSS */
 :root {
   --background: url(https://ian-jl-chua.github.io/assets/foggy-mountains-nature-fog.jpg);
-  --bg-color1: hsla(0, 0%, 0%, 0.7);
+  --bg-color1: hsl(112, 10%, 16%);
   --text-color: whitesmoke;
-  --active-color: hsl(120, 45%, 15%);
-  --link-color: hsl(120, 45%, 64%);
+  --active-color: hsl(81, 58%, 20%);
+  --link-color: hsl(140, 26%, 55%);
 
   /* Typography */
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -61,13 +61,22 @@ a {
   text-decoration: none;
 }
 
-/* Header and Nav */
 
+/* Reuse */
+.main {
+  overflow: hidden;
+}
+
+.section {
+  padding-block: 5rem 2rem;
+}
+
+/* Header and Nav */
 .header {
+  position: fixed;
   top: 0;
   left: 0;
   background-color: var(--bg-color1);
-  position: sticky;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -86,4 +95,16 @@ a {
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
+}
+
+.nav-link {
+  color: var(--link-color);
+  font-weight: var(--font-medium);
+  transition: color 0.6s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: var(--active-color);
+  /* background-color: black; */
 }
