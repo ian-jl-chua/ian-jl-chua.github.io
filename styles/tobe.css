@@ -9,10 +9,11 @@
   --header-height: 3.5rem;
   --background: url(https://ian-jl-chua.github.io/assets/foggy-mountains-nature-fog.jpg);
   --nav-color1: hsl(112, 10%, 16%);
-  --bg-color: hsla(103, 35%, 16%, 0.6);
+  --section-color: hsla(103, 35%, 16%, 0.6);
   --text-color: whitesmoke;
   --active-color: hsl(81, 58%, 20%);
   --link-color: hsl(140, 26%, 55%);
+  --bg-color: black;
 
   /* Typography */
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -63,6 +64,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 /* Reuse */
 .main {
   overflow: hidden;
@@ -70,28 +75,28 @@ a {
 
 .section {
   padding: 1rem;
-  padding-block: 5rem 1.5rem;
   margin: 0.5rem 0;
-  background-color: var(--bg-color);
+  background-color: var(--section-color);
   color: var(--text-color);
 }
 
 .title {
   font-family: 'Noto Serif', serif;
-  font-weight: var(--font-semi-bold);
+  font-size: var(--biggest-font-size);
+  padding: 2rem 1rem;
 }
 
 /* Header and Nav */
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   background-color: var(--nav-color1);
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding: 20px 5px;
+  padding: 20px 35px;
   z-index: 100;
 }
 
@@ -102,9 +107,9 @@ a {
 .nav-list {
   width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   padding: 10px;
+  flex-wrap: wrap;
 }
 
 .nav-link {
@@ -116,5 +121,42 @@ a {
 .nav-link:hover,
 .nav-link:active {
   color: var(--active-color);
-  /* background-color: black; */
+}
+
+/* Fade text */
+.fade-txt {
+  position: relative;
+  display: inline-block;
+}
+
+.initial-text,
+.hover-text {
+  transition: opacity 2.5s ease;
+}
+
+.initial-text {
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+}
+
+.hover-text {
+  /* position: absolute; */
+  opacity: 0;
+  z-index: 2;
+}
+
+.fade-txt:hover .initial-text {
+  opacity: 0;
+}
+
+.fade-txt:hover .hover-text {
+  opacity: 1;
+}
+
+/* Media Query */
+
+@media screen and (min-width:576px){
+
+  /* to do */
 }
