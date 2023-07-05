@@ -155,19 +155,18 @@ img {
 }
 
 /* Section1 */
-.section-container{
+.section-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.section-para{
+.section-para {
   padding-bottom: 1.5rem;
   font-size: var(--h2-font-size);
   text-align: center;
 }
-
 
 /* Cards in section2 */
 figcaption {
@@ -222,30 +221,35 @@ figcaption {
 
 .card-link {
   color: var(--text-color);
-  padding: .5rem;
+  padding: 0.5rem;
   border: 1px solid var(--active-color);
 }
 .card-link:hover {
-  transition: .5s;
+  transition: 0.5s;
   color: var(--link-color);
-  border: 2px solid var(--link-color) ;
+  border: 2px solid var(--link-color);
 }
-
 
 /* Media Query */
 
 @media screen and (min-width: 576px) {
-  /* to do */
+  .card:nth-child(5) {
+    height: 450px;
+  }
 }
 
 /* Medium */
 @media screen and (min-width: 768px) {
   .card-container {
-    gap:3rem;
+    gap: 3rem;
   }
 
   .card {
     width: min(100%, 290px);
+  }
+
+  .card:nth-child(5) {
+    height: 342px;
   }
 
   .card img {
@@ -253,11 +257,47 @@ figcaption {
   }
 
   .card-list {
-  margin: 1.5rem;
-    padding: .5rem;
+    margin: 1.5rem;
+    padding: 0.5rem;
     gap: 1.5rem;
     align-items: center;
     font-size: var(--font-medium);
   }
 }
 
+/* Larger */
+@media screen and (min-width: 1024px) {
+  .card-container {
+    gap: 2rem;
+  }
+
+  .card:nth-child(5) {
+    height: 342px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-container {
+    gap: 2.5rem;
+  }
+
+  .card {
+    width: min(100%, 550px);
+  }
+
+  .card:nth-child(5) {
+    height: 500px;
+  }
+
+  .card img {
+    height: 340px;
+  }
+
+  .card-list {
+    margin: 1.5rem;
+    padding: 1rem;
+    gap: 2rem;
+    align-items: center;
+    font-size: var(--bigger-font-size);
+  }
+}
