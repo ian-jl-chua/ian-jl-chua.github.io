@@ -1,122 +1,314 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@600&display=swap');
+/* CSS for above ^ font-family: 'Noto Serif', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+/* ^ font-family: 'Metal Mania', cursive; */
+
+/* Variable CSS */
+:root {
+  --header-height: 3.5rem;
+  --background: url('../assets/foggy-mountains-nature-fog.jpg');
+  --main-dark1: hsl(112, 10%, 16%);
+  --main-dark2: hsl(100, 63%, 10%);
+  --main-dark3: hsla(103, 35%, 16%, 0.5);
+  --active-color: hsl(81, 62%, 19%);
+  --link-color: hsl(140, 26%, 55%);
+  --text-color: whitesmoke;
+
+  /* Typography */
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: sans-serif;
+  --biggest-font-size: 2rem;
+  --bigger-font-size: 1.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /* Font weight */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+}
+
+/* Main */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html {
-  background: url(https://ian-jl-chua.github.io/assets/foggy-mountains-nature-fog.jpg)
-    no-repeat center fixed ;
+  scroll-behavior: smooth;
+}
+
+input,
+textarea,
+button,
+body {
+  font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--font-regular);
+}
+
+body {
+  background: var(--background) no-repeat center fixed;
   background-size: cover;
 }
-span {
-  font-weight: bold;
-  text-decoration: underline;
+
+ul {
+  list-style: none;
 }
 
-h1 {
-  font-size: 40px;
-  margin-top: 0;
-}
-a:link,
-a:visited {
-  color: rgb(152, 201, 152);
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:hover,
-a:active {
-  color: whitesmoke;
-  background-color: transparent;
+a {
   text-decoration: none;
 }
 
-.words {
-  font-size: 1.4rem;
-}
-
-.imageclass {
-  max-width: 50%;
+img {
   display: block;
-  margin: 0 auto;
-}
-.video {
-  display: block;
-  margin: auto;
-  text-align: center;
-  overflow: hidden;
+  max-width: 100%;
+  height: auto;
 }
 
-.nav {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  list-style-type: none;
-  overflow: hidden;
-  background-color: rgb(0, 0, 0, 0.6);
-  color: whitesmoke;
-  border-style: solid;
-  border-radius: 5px;
-  border-color: rgb(99, 105, 99);
-  padding: 10px;
-  border-width: 5px 5px 5px;
-}
-
-.nav2 {
-  overflow: hidden;
-  background-color: rgb(0, 0, 0, 0.6);
-  color: whitesmoke;
-  border-style: solid;
-  border-radius: 5px;
-  border-color: rgb(99, 105, 99);
-  padding: 10px;
-  border-width: 5px 5px 5px;
-  margin: 10px 100px 10px;
-  font-size: 20px;
-}
-
-.nav a {
-  float: left;
-  text-decoration: none;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  color: whitesmoke;
-  text-align: center;
-  padding: 12px 50px;
-}
-
-.nav a:hover:not(.active) {
-  background-color: rgb(22, 56, 22);
-  color: whitesmoke;
-}
-
-.nav a.active {
-  background-color: rgb(245, 245, 245, 0.8);
-  color: rgb(22, 56, 22);
-}
-
+/* Reuse */
 .main {
-  background-color: rgb(0, 0, 0, 0.6);
-  color: whitesmoke;
-  border-style: solid;
-  border-color: rgb(99, 105, 99);
-  padding: 10px;
-  border-width: 5px 5px 5px;
+  overflow: hidden;
+}
+
+.section {
+  padding: 1.5rem;
+  margin: 0.5rem 0;
+  background-color: var(--main-dark3);
+  color: var(--text-color);
+}
+
+.title {
+  display: flex;
+  font-family: 'Noto Serif', serif;
+  font-size: 3rem;
+  padding: 2rem 1.5rem;
+  place-content: center;
+}
+
+.blog-subtitle{
+  font-size: 1.25em;
+  padding: 1.5rem .5rem;
+}
+
+/* Fade text */
+.fade-txt {
+  position: relative;
+}
+
+.initial-text,
+.hover-text {
+  transition: opacity 2.5s ease;
+}
+
+.initial-text {
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+}
+
+.hover-text {
+  opacity: 0;
+  z-index: 2;
+}
+
+.fade-txt:hover .initial-text {
+  opacity: 0;
+}
+
+.fade-txt:hover .hover-text {
+  opacity: 1;
+}
+
+/* Header and Nav */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--main-dark1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 35px;
+  z-index: 100;
+}
+
+.nav-menu {
+  width: 100%;
+}
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: var(--link-color);
+  font-weight: var(--font-medium);
+  transition: color 0.6s;
+}
+.nav-link:is(:hover, :active) {
+  color: var(--active-color);
+}
+
+/* Section1 */
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-para {
+  padding-bottom: 1.5rem;
+  font-size: var(--h2-font-size);
+  text-align: center;
+}
+
+/* Cards in section2 */
+figcaption {
+  position: absolute;
+  left: -1000px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  gap: 2.5rem;
+}
+
+.card {
+  scroll-margin-top: 8rem;
+  width: min(100%, 450px);
+  background-color: var(--main-dark2);
+  border: 5px solid var(--active-color);
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transition: 1.5s;
+  border: 5px solid var(--link-color);
+}
+
+.card figure {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.card img {
+  height: 280px;
   border-radius: 5px;
 }
 
-.para {
-  background-color: rgb(0, 0, 0, 0.7);
-  color: whitesmoke;
-  border-style: solid;
-  border-color: rgb(99, 105, 99);
-  padding: 3vmax;
-  border-width: 5px 5px 5px;
-  border-radius: 5px;
-  margin: 4em 2em 4em;
+.card-list {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  align-items: center;
+  font-size: var(--bigger-font-size);
 }
 
-#align1 {
-  padding: 20px;
-  margin: 30px;
+.card-link {
+  color: var(--text-color);
+  padding: 0.5rem;
+  border: 1px solid var(--active-color);
+}
+.card-link:hover {
+  transition: 0.5s;
+  color: var(--link-color);
+  border: 2px solid var(--link-color);
 }
 
-@media screen and (max-width: 400px) {
-  ul.nav li {
-    float: none;
+/* Media Query */
+
+@media screen and (min-width: 576px) {
+  .card:nth-child(5) {
+    height: 450px;
+  }
+}
+
+/* Medium */
+@media screen and (min-width: 768px) {
+  .card-container {
+    gap: 3rem;
+  }
+
+  .card {
+    width: min(100%, 290px);
+  }
+
+  .card:nth-child(5) {
+    height: 342px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .card-list {
+    margin: 1.5rem;
+    padding: 0.5rem;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: var(--font-medium);
+  }
+}
+
+/* Larger */
+@media screen and (min-width: 1024px) {
+  .card-container {
+    gap: 2rem;
+  }
+
+  .card:nth-child(5) {
+    height: 342px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-container {
+    gap: 2.5rem;
+  }
+
+  .card {
+    width: min(100%, 550px);
+  }
+
+  .card:nth-child(5) {
+    height: 500px;
+  }
+
+  .card img {
+    height: 340px;
+  }
+
+  .card-list {
+    margin: 1.5rem;
+    padding: 1rem;
+    gap: 2rem;
+    align-items: center;
+    font-size: var(--bigger-font-size);
   }
 }
