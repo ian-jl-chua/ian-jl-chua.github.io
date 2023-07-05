@@ -90,6 +90,35 @@ img {
   place-content: center;
 }
 
+/* Fade text */
+.fade-txt {
+  position: relative;
+}
+
+.initial-text,
+.hover-text {
+  transition: opacity 2.5s ease;
+}
+
+.initial-text {
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+}
+
+.hover-text {
+  opacity: 0;
+  z-index: 2;
+}
+
+.fade-txt:hover .initial-text {
+  opacity: 0;
+}
+
+.fade-txt:hover .hover-text {
+  opacity: 1;
+}
+
 /* Header and Nav */
 .header {
   position: sticky;
@@ -112,7 +141,7 @@ img {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 12px;
   flex-wrap: wrap;
 }
 
@@ -121,45 +150,29 @@ img {
   font-weight: var(--font-medium);
   transition: color 0.6s;
 }
-
 .nav-link:is(:hover, :active) {
   color: var(--active-color);
 }
 
-/* Fade text */
-.fade-txt {
-  position: relative;
+/* Section1 */
+.section-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.initial-text,
-.hover-text {
-  transition: opacity 2.5s ease;
+.section-para{
+  padding-bottom: 1.5rem;
+  font-size: var(--h2-font-size);
+  text-align: center;
 }
 
-.initial-text {
-  position: absolute;
-  opacity: 1;
-  z-index: 1;
-}
 
-.hover-text {
-  /* position: absolute; */
-  opacity: 0;
-  z-index: 2;
-}
-
-.fade-txt:hover .initial-text {
-  opacity: 0;
-}
-
-.fade-txt:hover .hover-text {
-  opacity: 1;
-}
-
-/* Cards in section */
+/* Cards in section2 */
 figcaption {
   position: absolute;
-  left: -1001px;
+  left: -1000px;
 }
 
 .card-container {
@@ -194,7 +207,7 @@ figcaption {
 }
 
 .card img {
-  height: 250px;
+  height: 280px;
   border-radius: 5px;
 }
 
@@ -224,3 +237,27 @@ figcaption {
 @media screen and (min-width: 576px) {
   /* to do */
 }
+
+/* Medium */
+@media screen and (min-width: 768px) {
+  .card-container {
+    gap:3rem;
+  }
+
+  .card {
+    width: min(100%, 290px);
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .card-list {
+  margin: 1.5rem;
+    padding: .5rem;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: var(--font-medium);
+  }
+}
+
