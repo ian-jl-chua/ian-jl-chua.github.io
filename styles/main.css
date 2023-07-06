@@ -11,7 +11,7 @@
   --main-dark1: hsl(112, 10%, 16%);
   --main-dark2: hsl(100, 63%, 10%);
   --main-dark3: hsla(103, 35%, 16%, 0.5);
-  --active-color: hsl(81, 62%, 19%);
+  --border-color: hsl(81, 62%, 19%);
   --link-color: hsl(140, 26%, 55%);
   --text-color: whitesmoke;
 
@@ -80,8 +80,7 @@ img {
 }
 
 .internal-a {
-  background-color: var(--link-color);
-  color: var(--active-col);
+  color: rgb(221, 185, 68);
 }
 
 .section {
@@ -193,13 +192,18 @@ img {
 .nav-link {
   color: var(--link-color);
   font-weight: var(--font-medium);
-  transition: color 0.6s;
 }
 .nav-link:is(:hover, :active) {
-  color: var(--active-color);
+  filter: brightness(60%);
 }
 
-/* Section1 */
+/* Main */
+
+.internal-a:hover {
+  color: var(--link-color);
+}
+
+/* Section */
 .section-container {
   display: flex;
   flex-direction: column;
@@ -232,7 +236,7 @@ figcaption {
   scroll-margin-top: 8rem;
   width: min(100%, 450px);
   background-color: var(--main-dark2);
-  border: 5px solid var(--active-color);
+  border: 5px solid var(--border-color);
   border-radius: 5px;
   padding: 1rem;
   display: flex;
@@ -267,7 +271,7 @@ figcaption {
 .card-link {
   color: var(--text-color);
   padding: 0.5rem;
-  border: 1px solid var(--active-color);
+  border: 1px solid var(--border-color);
 }
 .card-link:hover {
   transition: 0.5s;
@@ -335,7 +339,7 @@ figcaption {
 
   .blog-article {
     padding: 3.5rem;
-    margin: 2rem 2.5rem ;
+    margin: 2rem 2.5rem;
   }
 }
 
@@ -366,6 +370,6 @@ figcaption {
 
   .blog-article {
     padding: 3.5rem;
-    margin: 2rem 5rem ;
+    margin: 2rem 5rem;
   }
 }
