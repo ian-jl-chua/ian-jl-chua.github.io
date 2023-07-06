@@ -88,7 +88,7 @@ img {
   grid-template-columns: 1fr 1fr;
 } */
 
-.internal-a{
+.internal-a {
   background-color: var(--link-color);
   color: var(--active-col);
 }
@@ -222,7 +222,7 @@ img {
   text-align: center;
 }
 
-/* Cards in section2 */
+/* Cards */
 figcaption {
   position: absolute;
   left: -1000px;
@@ -282,6 +282,14 @@ figcaption {
   transition: 0.5s;
   color: var(--link-color);
   border: 2px solid var(--link-color);
+}
+
+/* Iframe */
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 /* Media Query */
