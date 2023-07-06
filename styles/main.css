@@ -79,15 +79,6 @@ img {
   overflow: hidden;
 }
 
-/* .grid {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.container {
-  grid-template-columns: 1fr 1fr;
-} */
-
 .internal-a {
   background-color: var(--link-color);
   color: var(--active-col);
@@ -293,7 +284,7 @@ figcaption {
 }
 
 /* Media Query */
-
+/* Small */
 @media screen and (min-width: 576px) {
   .card:nth-child(5) {
     height: 450px;
@@ -325,9 +316,14 @@ figcaption {
     align-items: center;
     font-size: var(--font-medium);
   }
+
+  .blog-article {
+    padding: 3rem;
+    margin: 1.5rem 2rem;
+  }
 }
 
-/* Larger */
+/* Large */
 @media screen and (min-width: 1024px) {
   .card-container {
     gap: 2rem;
@@ -335,6 +331,11 @@ figcaption {
 
   .card:nth-child(5) {
     height: 342px;
+  }
+
+  .blog-article {
+    padding: 3.5rem;
+    margin: 2rem 2.5rem ;
   }
 }
 
@@ -361,5 +362,10 @@ figcaption {
     gap: 2rem;
     align-items: center;
     font-size: var(--bigger-font-size);
+  }
+
+  .blog-article {
+    padding: 3.5rem;
+    margin: 2rem 5rem ;
   }
 }
