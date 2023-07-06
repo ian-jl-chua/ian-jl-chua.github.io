@@ -35,60 +35,75 @@
           <h2 class="blog-question">
             What are the best practices associated with using classes vs. ids?
           </h2>
-          <p>
-            The general rule would be to use class to style elements in a HTML
-            document where ID is targeting a specific element of that HTML
-            document. If both class and ID are used in an element, the ID rule
-            is applied if there are overlap in instructions.
-          </p>
-          <p>
-            For example if there is a 'font-weight: bold' in the class and a
-            'font-weight: lighter' in the ID
-          </p>
-
-          <img class="imageclass" src="../../assets/image-class-id1.png" />
+          <div class="blog-answer">
+            <p>
+              The general rule would be to use class to style elements in a HTML
+              document where ID is targeting a specific element of that HTML
+              document. If both class and ID are used in an element, the ID rule
+              is applied if there are overlap in instructions.
+            </p>
+            <p>
+              For example if there is a 'font-weight: bold' in the class and a
+              'font-weight: lighter' in the ID
+            </p>
+          </div>
+          <figure class="img-container">
+            <img class="blog-img" src="../../assets/image-class-id1.png" />
+            <figcaption>Example Code</figcaption>
+          </figure>
           <br />
-
-          <p>and both of these are applied to an element.</p>
-          <img class="imageclass" src="../../assets/image-class-id2.png" />
-
-          <p>The 'font-weight: lighter' would be applied to the element.</p>
-
-          <p>
-            The way to look can be like a school. The "Class" are like class
-            rooms in a school, and the "ID" are like the students. You can have
-            many "Class"rooms but individual student "ID"s unique to each
-            student.
-          </p>
-
-          <p>NOTE: Class and ID selectors are case sensitive</p>
+          <div class="blog-answer">
+            <p>and both of these are applied to an element.</p>
+          </div>
+          <figure class="img-container">
+            <img class="blog-img" src="../../assets/image-class-id2.png" />
+            <figcaption>Example Code</figcaption>
+          </figure>
+          <div class="blog-answer">
+            <p>The 'font-weight: lighter' would be applied to the element.</p>
+            <p>
+              The way to look can be like a school. The "Class" are like class
+              rooms in a school, and the "ID" are like the students. You can
+              have many "Class"rooms but individual student "ID"s unique to each
+              student.
+            </p>
+            <p>NOTE: Class and ID selectors are case sensitive</p>
+          </div>
         </article>
         <article class="blog-article">
           <h2 class="blog-question">Class</h2>
-          <p>
-            Is not unique and can be used to style <span>multiple</span> element
-            on the document.
-          </p>
-          <p>
-            An element can also have more than one class selector. Here we can
-            see two class selectors (one and two) in one element
-          </p>
-          <img class="imageclass" src="../../assets/class.png" />
+          <div class="blog-answer">
+            <p>
+              Is not unique and can be used to style
+              <span>multiple</span> element on the document.
+            </p>
+            <p>
+              An element can also have more than one class selector. Here we can
+              see two class selectors (one and two) in one element
+            </p>
+          </div>
+          <figure class="img-container">
+            <img class="blog-img" src="../../assets/class.png" />
+            <figcaption>Example Code</figcaption>
+          </figure>
         </article>
         <article class="blog-article">
           <h2 class="blog-question">ID</h2>
-          <p>
-            IS unique and can only be used to style <span>one</span> element on
-            the document.
-          </p>
-          <p>Useful in conjunction with JavaScript</p>
-          <p>
-            Can only appear ONCE on a page, and you cannot combine 2 ID selector
-            together. You can only do this with Class selectors
-          </p>
-          <p>
-            Are good for creating links to different sections on a same webpage
-          </p>
+          <div class="blog-answer">
+            <p>
+              IS unique and can only be used to style <span>one</span> element
+              on the document.
+            </p>
+            <p>Useful in conjunction with JavaScript</p>
+            <p>
+              Can only appear ONCE on a page, and you cannot combine 2 ID
+              selector together. You can only do this with Class selectors
+            </p>
+            <p>
+              Are good for creating links to different sections on a same
+              webpage
+            </p>
+          </div>
         </article>
       </section>
     </main>
