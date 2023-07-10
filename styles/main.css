@@ -25,7 +25,6 @@
   --h3-font-size: 1rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
 
   /* Font weight */
   --font-regular: 400;
@@ -206,7 +205,6 @@ img {
 .show-nav {
   display: flex;
   flex-wrap: wrap;
-  position: fixed;
   top: 25%;
   left: 0px;
   height: 120px;
@@ -349,6 +347,10 @@ figcaption {
   .card:nth-child(5) {
     height: 450px;
   }
+
+  .side-menu-link {
+    rotate: -90deg;
+  }
 }
 
 /* Medium */
@@ -380,6 +382,10 @@ figcaption {
   .blog-article {
     padding: 3rem;
     margin: 1.5rem 2rem;
+  }
+
+  .side-menu-link {
+    rotate: -90deg;
   }
 }
 
@@ -427,5 +433,9 @@ figcaption {
   .blog-article {
     padding: 3.5rem;
     margin: 2rem 5rem;
+  }
+
+  .side-menu-link {
+    rotate: 0deg;
   }
 }
