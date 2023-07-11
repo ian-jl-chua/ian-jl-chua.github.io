@@ -24,7 +24,6 @@
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
 
   /* Font weight */
   --font-regular: 400;
@@ -198,15 +197,11 @@ img {
 
 /* Side Nav */
 .side-menu {
-  position: fixed;
-  left: -1000px;
-}
-
-.show-nav {
   display: flex;
   flex-wrap: wrap;
+  position: fixed;
   top: 25%;
-  left: 0px;
+  left: -1000px;
   height: 120px;
   width: 5%;
   background-color: var(--main-dark1);
@@ -216,25 +211,13 @@ img {
   text-align: center;
   align-content: center;
   overflow: hidden;
-  animation: showNav 0.5s forwards;
+  opacity: 0;
+  transition: left 1s ease, opacity 0.5s;
 }
 
-@keyframes showNav {
-  0% {
-    transform: translateX(-100px);
-  }
-  25% {
-    transform: translateX(-75px);
-  }
-  50% {
-    transform: translateX(-50px);
-  }
-  75% {
-    transform: translateX(-25px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
+.side-menu.show-nav {
+  left: 0;
+  opacity: 1;
 }
 
 .show-nav:hover {
