@@ -202,12 +202,13 @@ img {
   position: fixed;
   top: 25%;
   left: -1000px;
-  height: 120px;
+  height: 150px;
   width: 5%;
   background-color: var(--main-dark1);
   border: 2px solid var(--border-color);
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0px;
   font-size: var(--normal-font-size);
+  padding-left: 1%;
   text-align: center;
   align-content: center;
   overflow: hidden;
@@ -227,6 +228,8 @@ img {
 
 .side-menu-link {
   color: var(--link-color);
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
 }
 
 .side-menu-link:is(:hover, :focus) {
@@ -330,10 +333,6 @@ figcaption {
   .card:nth-child(5) {
     height: 450px;
   }
-
-  .side-menu-link {
-    rotate: -90deg;
-  }
 }
 
 /* Medium */
@@ -367,8 +366,8 @@ figcaption {
     margin: 1.5rem 2rem;
   }
 
-  .side-menu-link {
-    rotate: -90deg;
+  .side-menu {
+    height: 140px;
   }
 }
 
@@ -385,6 +384,16 @@ figcaption {
   .blog-article {
     padding: 3.5rem;
     margin: 2rem 2.5rem;
+  }
+
+  .side-menu {
+    height: 120px;
+    padding-left: 0;
+  }
+
+  .side-menu-link {
+    rotate: 180deg;
+    writing-mode: horizontal-tb;
   }
 }
 
@@ -416,9 +425,5 @@ figcaption {
   .blog-article {
     padding: 3.5rem;
     margin: 2rem 5rem;
-  }
-
-  .side-menu-link {
-    rotate: 0deg;
   }
 }
