@@ -1,12 +1,19 @@
 // SideNav //
 const displaySideNav = () => {
-  const nav = document.getElementById('side-nav')
-  // add when scroll is greater than 135 viewport height
-  this.scrollY >= 135
-    ? nav.classList.add('show-nav')
-    : nav.classList.remove('show-nav')
-}
-window.addEventListener('scroll', displaySideNav)
+  const nav = document.getElementById('side-nav');
+  const scrollPosition = window.scrollY;
+  const viewportHeight = window.innerHeight;
+
+  if (scrollPosition >= 135 && viewportHeight >= 135) {
+    nav.classList.add('show-nav');
+  } else {
+    nav.classList.remove('show-nav');
+  }
+};
+
+window.addEventListener('scroll', displaySideNav);
+window.addEventListener('resize', displaySideNav);
+
 
 // FROM AN EXAMPLE //
 // This MIGHT come in useful but not for what I'm after //
@@ -29,4 +36,3 @@ window.addEventListener('scroll', displaySideNav)
 // }
 
 // window.addEventListener('scroll', displaySideNav)
-
