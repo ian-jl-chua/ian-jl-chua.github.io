@@ -319,6 +319,23 @@ figcaption {
   border: 2px solid var(--link-color);
 }
 
+/* Footer */
+.footer {
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-dark1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 35px;
+  z-index: 100;
+}
+
+.nav-footer-content {
+  color: var(--text-color);
+}
+
 /* Iframe */
 .video {
   display: flex;

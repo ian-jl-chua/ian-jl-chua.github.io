@@ -1,19 +1,28 @@
 // SideNav //
 const displaySideNav = () => {
-  const nav = document.getElementById('side-nav');
-  const scrollPosition = window.scrollY;
-  const viewportHeight = window.innerHeight;
+  const nav = document.getElementById('side-nav')
 
-  if (scrollPosition >= 135 && viewportHeight >= 135) {
-    nav.classList.add('show-nav');
-  } else {
-    nav.classList.remove('show-nav');
+  if (nav) {
+    const scrollPosition = window.scrollY
+    const viewportHeight = window.innerHeight
+
+    if (scrollPosition >= 135 && viewportHeight >= 135) {
+      nav.classList.add('show-nav')
+    } else {
+      nav.classList.remove('show-nav')
+    }
   }
-};
+}
 
-window.addEventListener('scroll', displaySideNav);
-window.addEventListener('resize', displaySideNav);
+window.addEventListener('scroll', displaySideNav)
+window.addEventListener('resize', displaySideNav)
 
+// Variable Year //
+const year = document.getElementById('year')
+const thisYear = new Date().getFullYear()
+
+year.setAttribute('datetime', thisYear)
+year.textContent = thisYear
 
 // FROM AN EXAMPLE //
 // This MIGHT come in useful but not for what I'm after //
